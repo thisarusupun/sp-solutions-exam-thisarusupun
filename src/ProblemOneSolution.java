@@ -1,5 +1,3 @@
-package problem1;
-
 public class ProblemOneSolution {
 
     public static void main(String[] args) {
