@@ -9,6 +9,8 @@ public class ProblemOneSolution {
         int sumOfNumbersUsingWhileLoop = findSumUsingWhileLoop(numList);
         System.out.println("sum of the numbers using while loop " + sumOfNumbersUsingWhileLoop);
 
+        int sumOfNumbersUsingRecursion = findSumUsingRecursion(numList,0,0);
+        System.out.println("sum of the numbers using recursion " + sumOfNumbersUsingRecursion);
 
     }
 
@@ -28,5 +30,12 @@ public class ProblemOneSolution {
             i++;
         }
         return sum;
+    }
+
+    private static int findSumUsingRecursion(int[] numList, int sum, int index) {
+        if (index == numList.length) {
+            return sum;
+        }
+        return findSumUsingRecursion(numList, sum + numList[index], index + 1);
     }
 }
