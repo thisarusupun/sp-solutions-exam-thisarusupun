@@ -3,6 +3,7 @@ import java.util.HashMap;
 public class ProblemThreeSolution {
 
     // this hashmap is used for memoization purpose to avoid any recalculations
+    // therefore it reduces space and time complexity(mainly space complexity)
     // Long data type is used as answer 3736710778780434371 is above the integer range
 
     private static final HashMap<Long, Long> calculatedValues = new HashMap<>();
